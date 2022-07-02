@@ -124,7 +124,7 @@ fetch("https://restcountries.com/v2/all")
          var new_Button=document.getElementById(`button${i}`);
          new_Button.classList.add("py-0");
          var new_cardButton=document.getElementById(`div${i}`);
-            fetch(`http://api.openweathermap.org/data/2.5/weather?q=${a}&appid=d746835531bef6dacba70a1a8e6edd11`)
+            fetch(`https://api.openweathermap.org/data/2.5/weather?q=${a}&appid=d746835531bef6dacba70a1a8e6edd11`)
             .then((b) => b.json())
             .then((s) =>{
               let temp=s.main.temp-273.15;
